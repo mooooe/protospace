@@ -1,28 +1,47 @@
-== README
+# Data base design
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Overview
+*Users can post own prototype
+*Users can comment and like other users' post
 
-Things you may want to cover:
+##Tables
+###Users
+|username|e-mail|passsword|member|profile|avator|works|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|t.string|t.string||t.string|t.string|t.text|t.text|t.text|
 
-* Ruby version
+###Protospaces
+|id|user_id|catch_copy|concept|
+|---|---|---|---|
+|t.integer|t.integer|t.text|
 
-* System dependencies
+###Comments
+|id|user_id|protospace_id|text|
+|---|---|---|---|
+|t.integer|t.integer|t.text|
 
-* Configuration
+###Likes
+|user_id|protospace_id|
+|---|---|
+|t.integer|t.integer|
 
-* Database creation
+##asociation
+###User
+*has_many :prototypes
+*has_many :comments
 
-* Database initialization
+###Prototype
+*has_many :comments
+*has_many :likes
+*has_many :images
 
-* How to run the test suite
+###Comment
+*belongs_to :user
+*belongs_to :prototype
 
-* Services (job queues, cache servers, search engines, etc.)
+###Image
+*belongs_to :user
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###Like
+*belongs_to :user
+*belongs_to :prototype
