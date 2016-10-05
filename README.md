@@ -12,7 +12,7 @@
 
 ### Prototypes
 |id|name|user_id|catch_copy|concept|like_count|image|
-|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |integer|string|integer|text|text|integer|text|
 
 ### Comments
