@@ -6,29 +6,29 @@
 
 ## Tables
 ### Users
-|id|username|e-mail|passsword|profile|avator|works|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|integer|string|string|string|string|string|string|
+|username|group|profile|avator|works|
+|:---:|:---:|:---:|:---:|
+|string|string|string|string|string|
 
 ### Prototypes
-|id|name|user_id|catch_copy|concept|like_count|image|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|integer|string|integer|text|text|integer|text|
+|name|user_id|catch_copy|concept|like_count|image|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|string|integer|text|text|integer|text|
 
 ### Comments
-|id|user_id|prototype_id|text|
-|:---:|:---:|:---:|:---:|
-|integer|integer|integer|text|
+|user_id|prototype_id|text|
+|:---:|:---:|:---:|
+|integer|integer|text|
 
 ### Images
-|id|prototype_id|status|
-|:---:|:---:|:---:|
-|integer|integer|integer|
+|prototype_id|status|
+|:---:|:---:|
+|integer|integer|
 
 ### Likes
-|id|user_id|protospace_id|
-|:---:|:---:|:---:|
-|integer|integer|integer|
+|user_id|protospace_id|
+|:---:|:---:|
+|integer|integer|
 
 ## asociation
 ### User
