@@ -7,7 +7,7 @@
 ## Tables
 ### Users
 |username|group|profile|avator|works|
-|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|
 |string|string|string|string|string|
 
 ### Prototypes
