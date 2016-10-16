@@ -24,7 +24,11 @@ ActiveRecord::Schema.define(version: 20161014171542) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
-    t.string   "name",                   limit: 255
+    t.string   "name",                   limit: 255,              null: false
+    t.string   "group",                  limit: 255
+    t.string   "profile",                limit: 255
+    t.string   "avator",                 limit: 255
+    t.string   "works",                  limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
   end
