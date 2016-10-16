@@ -9,8 +9,8 @@
           .user-image.col-md-2
             = f.button "Add image"
             = f.file_field :image, class: "btn btn-primary"
-          =f.email_field :email, class: "user-email", placeholder: "E-Mail"
-          =f.password_field :password, class: "user-password", placeholder: "Password"
+          = f.email_field :email, class: "user-email", placeholder: "E-Mail"
+          = f.password_field :password, class: "user-password", placeholder: "Password"
       .col-md-12
         %h4 Member of
         .user-user-member.row
@@ -27,3 +27,4 @@
     .row.text-center.user-btn
       = f.submit "Save", class: "btn btn-lg btn-primary btn-block"
     = render 'devise/shared/links'
+
